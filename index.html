@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Moscovici</title>
+  <style>
+    @font-face {
+      font-family: 'Arial Narrow';
+      src: local('Arial Narrow'),
+           local('ArialNarrow'),
+           url('https://fonts.cdnfonts.com/s/29107/ARIALN.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      perspective: 600px;
+    }
+
+    .text {
+      font-family: 'Arial Narrow', sans-serif;
+      font-size: clamp(1.5rem, 8vw, 5rem);
+      color: #666;
+      text-align: center;
+      animation: spin3d 4s linear infinite;
+      transform-style: preserve-3d;
+    }
+
+    @keyframes spin3d {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text">mark moscovici</div>
+</body>
+</html>
